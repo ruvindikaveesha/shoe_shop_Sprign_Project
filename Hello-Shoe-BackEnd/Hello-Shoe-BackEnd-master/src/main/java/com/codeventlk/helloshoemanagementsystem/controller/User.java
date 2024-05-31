@@ -47,9 +47,15 @@ public class User {
     public ResponseEntity<?> saveBranch(@Validated @RequestBody BranchDTO branchDTO,
                                              BindingResult bindingResult){
 
-        if (bindingResult.hasErrors()) {
+//        if (bindingResult.hasErrors()) {
+//            return ResponseEntity.status(HttpStatus.BAD_REQUEST).
+//                    body(bindingResult.getFieldErrors().get(0).getDefaultMessage());
+//        }
+
+
+        if(bindingResult.hasErrors()){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).
-                    body(bindingResult.getFieldErrors().get(0).getDefaultMessage());
+                    body((bindingResult.getFieldErrors().get(0).getDefaultMessage()));
         }
 
         try {
