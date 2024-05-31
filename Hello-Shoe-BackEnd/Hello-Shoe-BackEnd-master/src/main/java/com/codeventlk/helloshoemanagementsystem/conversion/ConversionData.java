@@ -104,7 +104,11 @@ public class ConversionData {
         return modelMapper.map(branchDTO, BranchEntity.class);
     }
 
-    public SizeEntity toSizeEntity(SizeDTO sizeDTO) {
+//    public SizeEntity toSizeEntity(SizeDTO sizeDTO) {
+//        return modelMapper.map(sizeDTO, SizeEntity.class);
+//    }
+
+    public SizeEntity toSizeEntity(SizeDTO sizeDTO){
         return modelMapper.map(sizeDTO, SizeEntity.class);
     }
 
