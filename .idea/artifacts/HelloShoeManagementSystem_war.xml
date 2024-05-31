@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HelloShoeManagementSystem:war">
+    <output-path>$PROJECT_DIR$/Hello-Shoe-BackEnd/Hello-Shoe-BackEnd-master/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>HelloShoeManagementSystem</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="HelloShoeManagementSystem-1.0.0.war">
+      <element id="artifact" artifact-name="HelloShoeManagementSystem:war exploded" />
+    </root>
+  </artifact>
+</component>
